@@ -4,11 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router} from "react-router-dom";
+import { ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
+
+const notify = () => toast.dark("Wow so easy !");
 ReactDOM.render(
   <React.StrictMode>
    <Router>
+       <button onClick={notify}>Notify !</button>
+
        <App />
+       <ToastContainer />
    </Router>
   </React.StrictMode>,
   document.getElementById('root')
