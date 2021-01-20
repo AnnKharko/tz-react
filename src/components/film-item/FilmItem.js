@@ -31,7 +31,8 @@ export const FilmItem = (props)  => {
                     backgroundPosition: "top",
                     height: 200,
                     width: '100%',
-                    backgroundImage: `url(${imgBuilder(poster_path)})`
+                    backgroundImage: `url(${imgBuilder(poster_path)})`,
+                    filter: 'invert(1)'
                 }}
             >
                {/*<img src={`https://image.tmdb.org/t/p/w200${poster_path}`} alt={`${original_title} poster`}/>*/}

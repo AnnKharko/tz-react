@@ -1,10 +1,9 @@
 .details{
     /*display: flex;*/
     /*flex-direction: column;*/
-    background-color: gray;
-    color: white;
+    background: white;
 }
 
 .image{
-
+filter: invert(1);
 }
